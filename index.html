@@ -24,9 +24,10 @@
 
    <header style="position: relative; background: url('mujer-cherokee.jpg') center center/cover no-repeat; height: 700px; color: #fff; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;">
     <!-- Overlay -->
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6);"></div>
-    
+       
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.35);"></div>
     <!-- Textos superpuestos -->
+       
     <div class="textos">
     <h1 style="font-family: 'Courier New', Courier, monospace; font-size: 5em; font-weight: bold; margin: 0; text-shadow: 4px 4px 10px rgba(0,0,0,0.9); color: #c00; letter-spacing: 0.1em;">RTwittNews</h1>
     <h2 style="font-family: 'Courier New', Courier, monospace; font-size: 2em; font-weight: bold; margin: 25px 0; text-shadow: 3px 3px 8px rgba(0,0,0,0.9); color: #fff; letter-spacing: 0.05em;">
@@ -47,55 +48,66 @@
     <a href="#tecnologia" style="margin: 0 30px; color: #fff; text-decoration: none; font-weight: bold; font-size: 1.2em;">Tecnología</a>
 </nav>
 </header>
+<main style="max-width: 1200px; margin: 40px auto; padding: 0 20px;">
 
+    <!-- Pan superior: Cartoon + Nota principal -->
+    <div style="display: flex; flex-wrap: wrap; gap: 30px; margin-bottom: 40px;">
+        <!-- Cartoon -->
+        <div style="flex: 1; min-width: 300px;">
+            <a href="cartoon.html" style="text-decoration: none; color: inherit;">
+                <img src="cartoon-principal.jpg" alt="Cartoon del día" style="width: 100%; height: auto; border-radius: 8px;">
+                <h2 style="font-size: 2em; margin: 15px 0 0; color: #c00;">Título del Cartoon</h2>
+            </a>
+        </div>
 
-
-
-    <!-- Home / Nota Kast / Tag para insertar imagen cartoon? Podemos hacer dos columnas, como en el modelo? cartoon al lado de la nota? --> 
-    <div id="home" class="article">
-        <p class="byline">Por Jerge (@monerojerg).</p>
-        <h3>La victoria de Kast: litio e injerencia</h3>
-        <p class="date">Por Rachel Gvgeyu, editora asociada de RTwittNews — 16/12/2025</p>
-        <p>En un giro significativo hacia la derecha, el ultraconservador José Antonio Kast, del Partido Republicano, ganó las elecciones presidenciales de Chile el 14 de diciembre de 2025 con aproximadamente el 58% de los votos en la segunda vuelta, derrotando al candidato de centroizquierda...</p>
-        <!-- Resto del texto de la nota Kast aquí -->
-        <p class="sources">(Fuentes: Reuters, The Guardian, NPR...)</p>
+        <!-- Nota principal -->
+        <div style="flex: 1; min-width: 300px;">
+            <h2 style="font-size: 2.5em; color: #c00; margin-top: 0;">Título Nota Principal</h2>
+            <p style="font-size: 1.2em; line-height: 1.6;">
+                Aquí el texto de la nota principal, unas 200 palabras... [cortado aquí]
+            </p>
+            <a href="nota-principal.html" style="color: #c00; font-weight: bold; text-decoration: none;">Continuar leyendo →</a>
+        </div>
     </div>
 
-    <!-- Placeholders para las otras tres notas (ventanas) -->
-    <div id="latinoamerica" class="article">
-        <h3>Latinoamérica</h3>
-        <p class="date">latinoamerica</p>
-        <p>Contenido aquí...</p>
-    </div>
+    <!-- Línea roja separadora -->
+    <hr style="border: none; border-top: 4px solid #c00; margin: 60px 0;">
 
-    <div id="asia" class="article">
-        <h3>Asia</h3>
-        <p class="date"asia</p>
-        <p>Contenido aquí...</p>
-    </div>
+    <!-- Pan inferior: 4 secciones simétricas -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+        <!-- Sección 1 -->
+        <div style="text-align: center;">
+            <a href="latam.html" style="text-decoration: none; color: inherit;">
+                <img src="foto-latam.jpg" alt="Latinoamérica" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px;">
+                <h3 style="font-size: 1.8em; margin: 15px 0 0; color: #c00;">Latinoamérica</h3>
+            </a>
+        </div>
 
-    <div id="europa" class="article">
-        <h3>Europa</h3>
-        <p class="date">Europa</p>
-        <p>Contenido aquí...</p>
-    </div>
+        <!-- Sección 2 -->
+        <div style="text-align: center;">
+            <a href="europa.html" style="text-decoration: none; color: inherit;">
+                <img src="foto-europa.jpg" alt="Europa" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px;">
+                <h3 style="font-size: 1.8em; margin: 15px 0 0; color: #c00;">Europa</h3>
+            </a>
+        </div>
 
-    <!-- Staff section placeholder -->
-    <div id="staff" class="article">
-        <h3>Staff</h3>
-        <!-- Agrega imágenes y bios cuando subas archivos -->
-        <p>A. G. López B. - CEO</p>
-        <p>Rachel Gvgeyu - Editora asociada</p>
-    </div>
+        <!-- Sección 3 -->
+        <div style="text-align: center;">
+            <a href="medio-oriente.html" style="text-decoration: none; color: inherit;">
+                <img src="foto-medio-oriente.jpg" alt="Medio Oriente" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px;">
+                <h3 style="font-size: 1.8em; margin: 15px 0 0; color: #c00;">Medio Oriente</h3>
+            </a>
+        </div>
 
-    <!-- TL placeholder - evaluado: embed oficial roto/limitado, dejo comentado -->
-    <!--
-    <div class="article">
-        <h3>Timeline RTwittNews</h3>
-        <a class="twitter-timeline" href="https://twitter.com/aglb66" data-width="800" data-height="600">Tweets by aglb66</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <!-- Sección 4 -->
+        <div style="text-align: center;">
+            <a href="tecnologia.html" style="text-decoration: none; color: inherit;">
+                <img src="foto-tecnologia.jpg" alt="Tecnología" style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px;">
+                <h3 style="font-size: 1.8em; margin: 15px 0 0; color: #c00;">Tecnología</h3>
+            </a>
+        </div>
     </div>
-    -->
+</main>
 
     <footer>
         <p>&copy; 2026 RTwittNews-AAN | Agencia Anarquista de Noticias | Todos los derechos liberados</p>
