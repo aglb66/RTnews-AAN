@@ -48,7 +48,29 @@
     <a href="#tecnologia" style="margin: 0 30px; color: #fff; text-decoration: none; font-weight: bold; font-size: 1.2em;">Tecnología</a>
 </nav>
 </header>
-<
+<main style="max-width: 1200px; margin: 40px auto; padding: 0 20px; display: flex; flex-wrap: wrap; gap: 40px;">
+    
+    <!-- Pan izquierdo: Destacado vertical (50% ancho) -->
+    <div style="flex: 1; min-width: 300px;">
+        <!-- Cartoon grande o nota principal -->
+        <a href="cartoon.html" style="text-decoration: none; color: inherit;">
+            <img src="cartoon-destacado.jpg" alt="Cartoon" style="width: 100%; border-radius: 8px;">
+            <h2 style="font-size: 2.5em; color: #c00; margin: 20px 0;">Título Cartoon</h2>
+        </a>
+        <!-- O nota principal aquí si prefieres -->
+    </div>
+
+    <!-- Pan derecho: Secciones/notas (50% ancho) -->
+    <div style="flex: 1; min-width: 300px;">
+        <!-- 4 secciones en columna o grid 2x2 -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+            <div><a href="latam.html"><img src="latam.jpg" style="width:100%; border-radius:8px;"><h3 style="color:#c00;">Latinoamérica</h3></a></div>
+            <div><a href="europa.html"><img src="europa.jpg" style="width:100%; border-radius:8px;"><h3 style="color:#c00;">Europa</h3></a></div>
+            <div><a href="medio-oriente.html"><img src="medio.jpg" style="width:100%; border-radius:8px;"><h3 style="color:#c00;">Medio Oriente</h3></a></div>
+            <div><a href="tecnologia.html"><img src="tech.jpg" style="width:100%; border-radius:8px;"><h3 style="color:#c00;">Tecnología</h3></a></div>
+        </div>
+    </div>
+</main>
     <footer>
         <p>&copy; 2026 RTwittNews-AAN | Agencia Anarquista de Noticias | Todos los derechos liberados</p>
         <p>Desarrollado por A. G. López B. y Rachel Gvgeyu</p>
